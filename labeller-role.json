@@ -1,0 +1,16 @@
+{
+    "Name": "AML Labeler - Custom",
+    "IsCustom": true,
+    "Description": "Can label data for Labeling",
+    "Actions": [
+        "Microsoft.MachineLearningServices/workspaces/read",
+        "Microsoft.MachineLearningServices/workspaces/labeling/projects/read",
+        "Microsoft.MachineLearningServices/workspaces/labeling/labels/write"
+    ],
+    "NotActions": [
+        "Microsoft.MachineLearningServices/workspaces/labeling/projects/summary/read"
+    ],
+    "AssignableScopes": [
+        "/subscriptions/<SUBSCRIPTION-ID>"
+    ]
+}

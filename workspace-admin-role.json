@@ -1,0 +1,18 @@
+{
+    "Name": "AML Workspace Admin Custom - Custom",
+    "IsCustom": true,
+    "Description": "Can perform all operations except quota management and upgrades",
+    "Actions": [
+        "Microsoft.MachineLearningServices/workspaces/*/read",
+        "Microsoft.MachineLearningServices/workspaces/*/action",
+        "Microsoft.MachineLearningServices/workspaces/*/write",
+        "Microsoft.MachineLearningServices/workspaces/*/delete",
+        "Microsoft.Authorization/roleAssignments/*"
+    ],
+    "NotActions": [
+        "Microsoft.MachineLearningServices/workspaces/write"
+    ],
+    "AssignableScopes": [
+        "/subscriptions/<SUBSCRIPTION-ID>"
+    ]
+}

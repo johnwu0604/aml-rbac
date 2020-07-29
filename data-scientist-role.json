@@ -1,0 +1,16 @@
+{
+    "Name": "AML Data Scientist - Custom",
+    "IsCustom": true,
+    "Description": "Can run experiments but can't create or delete computes.",
+    "Actions": ["*"],
+    "NotActions": [
+        "Microsoft.MachineLearningServices/workspaces/*/delete",
+        "Microsoft.MachineLearningServices/workspaces/write",
+        "Microsoft.MachineLearningServices/workspaces/computes/*/write",
+        "Microsoft.MachineLearningServices/workspaces/computes/*/delete", 
+        "Microsoft.Authorization/*/write"
+    ],
+    "AssignableScopes": [
+        "/subscriptions/<SUBSCRIPTION-ID>"
+    ]
+}
